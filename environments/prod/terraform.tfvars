@@ -1,1 +1,1 @@
-project="PROJECT_ID"
+project="gce-test-walkthrough"

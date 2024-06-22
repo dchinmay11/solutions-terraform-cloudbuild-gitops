@@ -13,18 +13,17 @@
 # limitations under the License.
 
 
-locals {
-  env = "dev"
-}
+
 
 provider "google" {
   project = "${var.project}"
 }
 
 
+resource "google_storage_bucket" "poc-bucket-vpcsc" {
+  name          = "no-public-access-bucket"
+  location      = "US"
+  force_destroy = true
 
-module "firewall" {
-  source  = "../../modules/firewall"
-  project = "${var.project}"
-  subnet  = "${module.vpc.subnet}"
+  public_access_prevention = "enforced"
 }

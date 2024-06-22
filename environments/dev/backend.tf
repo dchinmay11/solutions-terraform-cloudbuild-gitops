@@ -15,7 +15,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "gce-test-walkthrough-tfstate"
+    bucket = "my-poc-project-380512-tfstate"
     prefix = "env/dev"
   }
 }

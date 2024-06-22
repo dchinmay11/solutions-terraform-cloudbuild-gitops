@@ -1,1 +1,1 @@
-project="gce-test-walkthrough"
+project="my-poc-project-380512"

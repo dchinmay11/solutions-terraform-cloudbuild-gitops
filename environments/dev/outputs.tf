@@ -14,5 +14,5 @@
 
 
 output "network" {
-  value = "${module.vpc.network}"
+  value = google_storage_bucket.poc-bucket-vpcsc.url
 }
